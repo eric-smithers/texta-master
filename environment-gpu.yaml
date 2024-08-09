@@ -1,0 +1,66 @@
+name: texta-rest-gpu
+
+channels:
+  - conda-forge
+  - anaconda
+  - bioconda
+  - menpo
+
+dependencies:
+  - python=3.8
+  - pip
+  - lxml
+  - matplotlib
+  - graphviz
+  - pydot
+  - psutil
+  - pynvml
+  - uwsgi
+  - nginx
+  - supervisor
+  - psycopg2<2.9
+  - mysqlclient
+  - pip:
+      - django==2.*
+      - django-multiselectfield
+      - django-rest-serializer-field-permissions
+      - django-cors-headers
+      - django-extensions
+      - django-filter
+      - dj-rest-auth[with_social]
+      - djangorestframework==3.11.*
+      - drf-nested-routers
+      - celery==4.*
+      - redis==3.*
+      - elasticsearch==7.13.3
+      - elasticsearch_dsl>7<8
+      - termcolor
+      - django-environ
+      - joblib
+      - python-json-logger
+      - drf-yasg
+      - xlrd==1.2.0
+      - dill
+      - texta-anonymizer==1.*
+      - texta-mlp==1.17.*
+      - texta-lexicon-matcher==1.*
+      - texta-tools==2.*
+      - texta-embedding==1.*
+      - texta-elastic-tools==1.*
+      - texta-tagger==3.*
+      - texta-torch-tagger==3.*
+      - texta-bert-tagger==2.3.*
+      - texta-crf-extractor==2.*
+      - torch==1.11.0+cu113
+      - -f https://download.pytorch.org/whl/torch_stable.html
+      - pyjwt<2
+      - beautifulsoup4
+      - nltk==3.6.*
+      - python-slugify
+      - sumy
+      - django-environ
+      - mrakun
+      - pelecanus
+      - openpyxl
+      - scipy==1.5.*
+      - cryptography
